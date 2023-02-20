@@ -1,13 +1,11 @@
-import { Alert, Col, Row } from "react-bootstrap";
 import { useState, useEffect } from "react";
+import { Alert, Col, Row } from "react-bootstrap";
 
 export const Newsletter = ({ onValidated, status, message }) => {
   const [email, setEmail] = useState("");
 
   useEffect(() => {
-    if (status === "success") {
-      clearFields();
-    }
+    if (status === "success") clearFields();
   }, [status])
 
   const handleSubmit = (e) => {
@@ -25,10 +23,10 @@ export const Newsletter = ({ onValidated, status, message }) => {
 
   return (
     <Col lg={12}>
-      <div className="newsletter-bx">
+      <div className="newsletter-bx wow slideInUp">
         <Row>
           <Col lg={12} md={6} xl={5}>
-            <h3>Subscribe to our Newsletter</h3>
+            <h3>Subscribe to my Newsletter</h3>
             {status === "sending" && <Alert>Sending...</Alert>}
             {status === "error" && <Alert variant="danger">{message}</Alert>}
             {status === "sucess" && <Alert variant="sucess">{message}</Alert>}
