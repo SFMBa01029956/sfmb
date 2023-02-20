@@ -1,24 +1,32 @@
 {
   "files": {
     "main.css": "/sfmb/static/css/main.a6a46144.css",
-    "main.js": "/sfmb/static/js/main.87ac1cf0.js",
+    "main.js": "/sfmb/static/js/main.8095ef10.js",
+    "static/media/color-sharp.png": "/sfmb/static/media/color-sharp.bea361cfef80fefc2d1e.png",
+    "static/media/color-sharp2.png": "/sfmb/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/banner-bg.png": "/sfmb/static/media/banner-bg.cc1273af450504afe755.png",
     "static/media/header-img.svg": "/sfmb/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
     "static/media/CentraNo2-Bold.ttf": "/sfmb/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/sfmb/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/sfmb/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/project-img1.png": "/sfmb/static/media/project-img1.d593db3f12901bc685c2.png",
     "static/media/footer-bg.png": "/sfmb/static/media/footer-bg.7bd67c0f73571d0acc02.png",
+    "static/media/project-img2.png": "/sfmb/static/media/project-img2.2e52097c417f9f1134b0.png",
+    "static/media/project-img3.png": "/sfmb/static/media/project-img3.675b30d2f975a1bc1d09.png",
     "static/media/revicons.eot": "/sfmb/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/sfmb/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/sfmb/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/meter2.svg": "/sfmb/static/media/meter2.1b8f416eccd1ee162218b8528a1c5cdc.svg",
+    "static/media/meter1.svg": "/sfmb/static/media/meter1.c4085ff859afbd8488e9da47d4953850.svg",
+    "static/media/meter3.svg": "/sfmb/static/media/meter3.2201f7e4df22bc4b08180210474f28cc.svg",
     "static/media/logo.svg": "/sfmb/static/media/logo.eaf3c0bc058e0ed6471ba20dc0af6da2.svg",
     "index.html": "/sfmb/index.html",
     "static/media/nav-icon1.svg": "/sfmb/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "main.a6a46144.css.map": "/sfmb/static/css/main.a6a46144.css.map",
-    "main.87ac1cf0.js.map": "/sfmb/static/js/main.87ac1cf0.js.map"
+    "main.8095ef10.js.map": "/sfmb/static/js/main.8095ef10.js.map"
   },
   "entrypoints": [
     "static/css/main.a6a46144.css",
-    "static/js/main.87ac1cf0.js"
+    "static/js/main.8095ef10.js"
   ]
 }
