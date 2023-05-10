@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sfmb/static/css/main.66e07e39.css",
-    "main.js": "/sfmb/static/js/main.736658ab.js",
+    "main.js": "/sfmb/static/js/main.bd7591f2.js",
     "static/media/banner-bg.png": "/sfmb/static/media/banner-bg.96394e4bdef233d37f54.png",
     "static/media/project-img4.png": "/sfmb/static/media/project-img4.1ae1a95622b7ed94b951.png",
     "static/media/project-img6.png": "/sfmb/static/media/project-img6.c710c81ad79f22179a90.png",
@@ -12,6 +12,7 @@
     "static/media/footer-bg.png": "/sfmb/static/media/footer-bg.23140fdbcb145da6e435.png",
     "static/media/color-sharp.png": "/sfmb/static/media/color-sharp.61d9ab0e274025f193fe.png",
     "static/media/color-sharp2.png": "/sfmb/static/media/color-sharp2.0f96de50a0a8b2134b38.png",
+    "static/media/qr.png": "/sfmb/static/media/qr.1d94839f6194dbcc596d.png",
     "static/media/header-img.svg": "/sfmb/static/media/header-img.04c50a4e7bdb1c7c622279033e4b189a.svg",
     "static/media/CentraNo2-Bold.ttf": "/sfmb/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/sfmb/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
@@ -28,10 +29,10 @@
     "static/media/nav-icon1.svg": "/sfmb/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "static/media/logo.svg": "/sfmb/static/media/logo.941a3f607ab0dc9ca4fc42d934b65da8.svg",
     "main.66e07e39.css.map": "/sfmb/static/css/main.66e07e39.css.map",
-    "main.736658ab.js.map": "/sfmb/static/js/main.736658ab.js.map"
+    "main.bd7591f2.js.map": "/sfmb/static/js/main.bd7591f2.js.map"
   },
   "entrypoints": [
     "static/css/main.66e07e39.css",
-    "static/js/main.736658ab.js"
+    "static/js/main.bd7591f2.js"
   ]
 }
