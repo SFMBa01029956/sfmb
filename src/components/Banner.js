@@ -4,7 +4,6 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from '../assets/img/header-img.svg';
 import 'animate.css'
 import TrackVisibility from 'react-on-screen';
-import { isVisible } from "@testing-library/user-event/dist/utils";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -15,34 +14,34 @@ export const Banner = () => {
   const period = 2000;
 
   useEffect(() => {
+    const tick = () => {
+      let i = loopNum % toRotate.length;
+      let fullText = toRotate[i];
+      let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+
+      setText(updatedText);
+
+      if (isDeleting) {
+        setDelta(prevDelta => prevDelta / 2);
+      }
+
+      if (!isDeleting && updatedText === fullText) {
+        setIsDeleting(true);
+        setDelta(period);
+      } else if (isDeleting && updatedText === '') {
+        setIsDeleting(false);
+        setLoopNum(prevLoopNum => prevLoopNum + 1);
+        setDelta(500);
+      }
+    }
+
     let ticker = setInterval(() => {
       tick();
     }, delta)
 
     return () => { clearInterval(ticker)};
-  }, [text])
+  }, [loopNum, isDeleting, text, toRotate, delta])
 
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(prevLoopNum => prevLoopNum + 1);
-      setDelta(500);
-    }
-  }
-  
   return (
     <section className="banner" id="home">
       <Container>
@@ -54,7 +53,7 @@ export const Banner = () => {
                 <span className="tagLine">Welcome to my Portfolio</span>
                 <h1>{`Hi, I'm SFMB, `}<span className="wrap">{text}</span></h1>
                 <p> Student at Tecnológico de Monterrey. I consider myself very curious. I like to push my creative skills by creating Pixel-art and music. Passionate about technological advancements, fine arts, and entertainment. I’m interested in AI, Full-stack Development, smart process solutions, game-dev, and optimization. </p>
-                <button onClick={() => console.log('clicked')}>Let’s Connect<ArrowRightCircle size={25}/></button>
+                <button onClick={() => console.log('clicked')}>Let's Connect<ArrowRightCircle size={25}/></button>
               </div>}
             </TrackVisibility>
           </Col>
