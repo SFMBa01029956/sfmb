@@ -5,12 +5,14 @@ import { MailchimpForm } from './MailchimpForm';
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import { CQRCode } from './CQRCode';
+import qr from '../assets/img/qr.png';
 
 export const Footer = () => {
   const handleShareButtonClick = () => {
     const newWindow = window.open('', '_blank');
     // Add component to new window
-    ReactDOM.render(<CQRCode value={window.location.href} />, newWindow.document.body);
+    // ReactDOM.render(<CQRCode value={window.location.href} />, newWindow.document.body);
+    ReactDOM.render(<img src={qr} alt="qr" />, newWindow.document.body);
   };
 
   return (
